@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundovalputih"
+    android:layout_margin="20dp"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/one_error"
+                android:id="@+id/emoticon"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/emoticon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oops!"
+                    android:textSize="35dp"
+                    android:textColor="@color/hitamterang"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvPesanGagal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="periksa jaringan internet anda, \ndan coba kembali."
+                    android:textColor="@color/text_keterangan"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/tvTutupDialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/one_close"
+                android:clickable="true"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+</LinearLayout>

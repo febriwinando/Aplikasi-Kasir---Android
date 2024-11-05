@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "348957958346",
+    "firebase_url": "https://aplikasi-kasir-7e0d4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "aplikasi-kasir-7e0d4",
+    "storage_bucket": "aplikasi-kasir-7e0d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348957958346:android:74476b9d196fbfad47d433",
+        "android_client_info": {
+          "package_name": "com.example.aplikasikasir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoc0-2j5gE_nEFVJK51e-VggQptJIrQk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

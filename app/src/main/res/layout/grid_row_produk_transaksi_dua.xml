@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/llListTransaksi">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvListTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/ivListProduk"
+            app:shapeAppearance="@style/ImageStyleBottom20"
+            android:scaleType="centerCrop"
+            />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llHederList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            >
+
+                            <RelativeLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tvListProduk"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/color4"
+                                    />
+
+                                <TextView
+                                    android:layout_below="@+id/tvListProduk"
+                                    android:id="@+id/listHargaProduk"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/font_side"/>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:text="Jenis Menu"
+                                android:textColor="@color/text_color"
+                                android:id="@+id/tvBarcode"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_below="@+id/llHederList"
+                            android:id="@+id/imgChecked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end"
+                            android:foregroundGravity="right"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/minus"
+                                android:id="@+id/ivKurangJumlah"
+                                app:tint="@color/color4"
+                                />
+
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/tvJumlah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="100"
+                                android:textStyle="bold"
+                                android:textColor="@color/font_side"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/plus"
+                                android:id="@+id/ivTambahJumlah"
+                                app:tint="@color/color4"
+
+                                />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
